@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+</head>
+<body>
+    <h1>Will You Be My Valentine?</h1>
+    
+    <img src="cat_with_roses_meme.jpg" alt="Cat with Roses Meme">
+
+    <p>Click on your answer:</p>
+
+    <button onclick="showNo()">No</button>
+
+    <div id="noResponses" style="display: none;">
+        <p>Are you sure?</p>
+        <button onclick="showNo()">No</button>
+        <button onclick="showYes()">Yes</button>
+    </div>
+
+    <div id="celebration" style="display: none;">
+        <h2>Celebration Time!</h2>
+        <img src="celebration_cat_meme.jpg" alt="Celebration Cat Meme">
+    </div>
+
+    <script>
+        function showNo() {
+            document.getElementById('noResponses').style.display = 'block';
+        }
+
+        function showYes() {
+            document.getElementById('celebration').style.display = 'block';
+            document.getElementById('noResponses').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
